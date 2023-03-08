@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="task-form" onsubmit="return testDom()">
+            <div class="task-form title">
+                <label for="title">Task</label>
+                <input type="text" id="title" name="title" placeholder="Title of task">
+            </div>
+            <div class="task-form description">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Description of task">
+            </div>
+            <div class="task-form due-date">
+                <label for="due-date">Due date</label>
+                <input type="date" id="due-date" name="due-date">
+            </div>
+            <div class="task-form priority">
+                Priority:
+                <label for="urgent">Urgent</label>
+                <input type="radio" id="urgent" name="priority" value="Urgent">
+                <label for="non-urgent">Non-urgent</label>                    
+                <input type="radio" id="not-urgent" name="priority" value="Non-urgent">
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
